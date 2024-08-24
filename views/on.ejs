@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="/Statics/index.css">
+</head>
+<body>
+    <div id="main-nav">
+        <div id="nav-name">
+            <h1>Programmers daily quote!</h1>
+        </div>
+    </div>
+
+    <div class="switch-comp">
+        <div class="main-switch">
+            <div class="sub-switch">
+                <div class="button-place-down targeted-div">
+                    <div class="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-display">
+            <div class="sub-comp on">
+                <div class="main-content">
+                    <h1 class="black"><%= locals.content %></h1>
+                </div>
+                <div class="main-author">
+                    <h3 class="black"><%= locals.author %></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let move = 0
+        document.querySelector(".button").addEventListener("click", function () {
+            if (move === 0) {
+                window.location.replace("/off");
+        }})
+    </script>
+</body>
+</html>
